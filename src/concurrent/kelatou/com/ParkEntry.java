@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 public class ParkEntry {
 
 	// the number limit of visitors
-	public static int MAX_ENTRY = 50;
+	public static int MAX_ENTRY = 100;
 
 	final static AtomicInteger seq = new AtomicInteger();
 
@@ -55,6 +55,7 @@ public class ParkEntry {
 				exec.shutdownNow();
 			}
 		});
+		
 	}
 }
 
